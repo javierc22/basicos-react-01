@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Utilizando Function Declaration
 function Header() {
   const edad = 18;
 
