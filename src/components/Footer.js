@@ -1,10 +1,10 @@
 import React from 'react';
 
 // Utilizando function expression
-const Footer = () => {
+const Footer = ({fecha}) => {
   return (
     <footer>
-      <p>Todos los derechos reservados &copy;</p>
+      <p>Todos los derechos reservados &copy; {fecha}</p>
     </footer>
   );
 }
