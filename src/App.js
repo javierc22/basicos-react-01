@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Producto from './components/Producto';
 
 function App() {
   // Obtener la fecha
@@ -17,8 +18,19 @@ function App() {
   return (
     <Fragment>
       <Header titulo="Hola, soy un Header!" />
+
+      <h1>Lista de productos</h1>
+      {productos.map(producto => (
+        <Producto
+          key={producto.id}
+          producto={producto}
+        />
+      ))}
+
       {/* Fecha se manda entre "{}" porque no es un String */}
-      <Footer  fecha={fecha} />
+      <Footer
+        fecha={fecha} 
+      />
     </Fragment>
   );
 }
