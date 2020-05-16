@@ -41,4 +41,6 @@ function App() {
   );
 }
 
+// Nota: Asignación Desestructurante en Javascript
+
 export default App;
