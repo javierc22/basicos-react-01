@@ -15,6 +15,9 @@ function App() {
     { id: 4, nombre: 'Camisa Angular', precio: 20},
   ]);
 
+  // State para un carrito de compras
+  const [ carrito, agregarProducto ] = useState([]);
+
   return (
     <Fragment>
       <Header titulo="Hola, soy un Header!" />
@@ -24,6 +27,9 @@ function App() {
         <Producto
           key={producto.id}
           producto={producto}
+          productos={productos}
+          carrito={carrito}
+          agregarProducto={agregarProducto}
         />
       ))}
 
