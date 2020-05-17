@@ -34,7 +34,10 @@ function App() {
         />
       ))}
 
-      <Carrito carrito={carrito} />
+      <Carrito 
+        carrito={carrito}
+        agregarProducto={agregarProducto}
+      />
 
       {/* Fecha se manda entre "{}" porque no es un String */}
       <Footer
